@@ -2,9 +2,9 @@ import React from 'react';
 
 function SigninForm({ onInputChange, onFormSubmit, onRouteChange }) {
     return (
-        <div className="measure">
+        <div className="SigninForm">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                <legend className="f1 fw6 ph0 mh0">Sign In</legend>
+                <legend className="form-title f1 fw6 ph0 mh0">Sign In</legend>
                 <div className="mt3">
                     <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                     <input
@@ -25,13 +25,13 @@ function SigninForm({ onInputChange, onFormSubmit, onRouteChange }) {
             <div className="">
                 <input
                     onClick={onFormSubmit}
-                    className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                    className="submit-btn ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                     type="submit" value="Sign in"
                 />
             </div>
             <div className="lh-copy mt3">
                 <p onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">
-                    Register with <span className="underline">Smart Brain</span>
+                    <span className="underline">Register</span> with Smart Brain
                 </p>
             </div>
         </div>

@@ -2,9 +2,9 @@ import React from 'react';
 
 function RegisterForm({ onInputChange, onFormSubmit, onRouteChange }) {
     return (
-        <div className="measure">
+        <div className="RegisterForm">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                <legend className="f1 fw6 ph0 mh0">Register</legend>
+                <legend className="form-title f1 fw6 ph0 mh0">Register</legend>
                 <div className="mt3">
                     <label className="db fw6 lh-copy f6" htmlFor="name">Name</label>
                     <input
@@ -33,7 +33,7 @@ function RegisterForm({ onInputChange, onFormSubmit, onRouteChange }) {
             <div className="">
                 <input
                     onClick={onFormSubmit}
-                    className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                    className="submit-btn b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                     type="submit" value="Sign Up"
                 />
             </div>

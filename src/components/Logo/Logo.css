@@ -5,4 +5,27 @@
     /* ? Background Gradient */
     background: rgb(123,223,217);
     background: linear-gradient(90deg, rgba(123,223,217,1) 0%, rgba(22,203,138,1) 32%, rgba(245,130,130,1) 100%);
+    width: 150px;
+    height: 150px;
+}
+
+.Tilt-inner img {
+    padding: 6px 0 0 0;
+}
+
+@media screen and (max-width: 420px) {
+    .Tilt-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Tilt {
+        width: 70px;
+        height: 70px;
+    }
+
+    .Tilt-inner img {
+        padding: 0 0 6px 0;
+    }
 }

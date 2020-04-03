@@ -1,0 +1,13 @@
+@media screen and (max-width: 420px) {
+    .Entries {
+        margin: 10px;
+    }
+    
+    .Entries .user {
+        font-size: 18px;
+    }
+
+    .Entries .rank {
+        font-size: 40px;
+    }
+}

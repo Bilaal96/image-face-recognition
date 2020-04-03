@@ -3,8 +3,8 @@ import './FaceDetection.css';
 
 const FaceDetection = ({ imageUrl, faceBoxes }) => {
     return (
-        <div className="center ma4">
-            <div className="relative">
+        <div className="FaceDetection center ma4">
+            <div className="image-container relative">
                 <img id="input-image" src={imageUrl} width="500px" height="auto" alt="Face Detection" />
                 {faceBoxes.map((faceBox, i) => {
                     const { topRow, leftCol, bottomRow, rightCol } = faceBox;

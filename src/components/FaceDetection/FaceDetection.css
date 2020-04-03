@@ -7,3 +7,13 @@
     cursor: pointer;
     z-index: 1;
 }
+
+@media screen and (max-width: 420px) {
+    .FaceDetection .image-container {
+        width: 100vw;
+    }
+
+    .FaceDetection .image-container img {
+        width: 98%;
+    }
+}

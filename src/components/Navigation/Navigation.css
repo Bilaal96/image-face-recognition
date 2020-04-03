@@ -1,0 +1,11 @@
+#Navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 420px) {
+    #Navigation {
+        justify-content: center;
+        align-items: center;
+    }
+}

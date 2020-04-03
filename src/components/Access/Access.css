@@ -1,0 +1,17 @@
+@media screen and (max-width: 420px) {
+    .AccessForm {
+        margin: 20px;
+    }
+    
+    .AccessForm .form-title {
+        font-size: 36px;
+    }
+
+    .AccessForm label {
+        font-size: 16px;
+    }
+
+    .AccessForm .submit-btn {
+        font-size: 16px;
+    }
+}
