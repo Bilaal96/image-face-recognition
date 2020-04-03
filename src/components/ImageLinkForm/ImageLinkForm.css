@@ -14,4 +14,6 @@
 
 .detect-btn {
     background: rgba(245,130,130,1) 100%;
+    border: 1px solid rgb(253, 208, 208);
+    margin: 0 0 0 5px;
 }

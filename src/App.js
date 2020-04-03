@@ -3,9 +3,8 @@ import React, { Component, Fragment } from 'react';
 import Particles from 'react-particles-js'; // Particle Effects
 //? Components
 import Navigation from './components/Navigation/Navigation';
-import Signin from './components/Login/Signin';
-import Register from './components/Login/Register';
 import Logo from './components/Logo/Logo';
+import AccessForm from './components/Access/Access';
 import Entries from './components/Entries/Entries';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import FaceDetection from './components/FaceDetection/FaceDetection';
@@ -38,7 +37,7 @@ const particlesOptions = {
 			},
 			"onclick": {
 				"enable": true,
-				"mode": "push"
+				"mode": "repulse"
 			},
 			"resize": true
 		}
@@ -180,24 +179,6 @@ class App extends Component {
 		);
 	}
 
-	renderRegister = () => {
-		return (
-			<Register
-				onRouteChange={this.onRouteChange}
-				loadUser={this.loadUser}
-			/>
-		);
-	}
-
-	renderSignin = () => {
-		return (
-			<Signin
-				onRouteChange={this.onRouteChange}
-				loadUser={this.loadUser}
-			/>
-		);
-	}
-
 	render() {
 		const { route, isSignedIn } = this.state;
 
@@ -213,12 +194,14 @@ class App extends Component {
 				/>
 				<Logo />
 
+
 				{route === 'home'
 					? this.renderHome()
-					: (route === 'register'
-						? this.renderRegister()
-						: this.renderSignin()
-					)
+					: <AccessForm
+						route={route}
+						onRouteChange={this.onRouteChange}
+						loadUser={this.loadUser}
+					/>
 				}
 			</div>
 		);
