@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SigninForm({ onInputChange, onFormSubmit, onRouteChange }) {
+function SigninForm({ onFormInputChange, onFormSubmit, onRouteChange }) {
     return (
         <div className="SigninForm">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
@@ -8,7 +8,7 @@ function SigninForm({ onInputChange, onFormSubmit, onRouteChange }) {
                 <div className="mt3">
                     <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                     <input
-                        onChange={onInputChange}
+                        onChange={onFormInputChange}
                         className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                         type="email" name="email" id="email-address"
                     />
@@ -16,7 +16,7 @@ function SigninForm({ onInputChange, onFormSubmit, onRouteChange }) {
                 <div className="mv3">
                     <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                     <input
-                        onChange={onInputChange}
+                        onChange={onFormInputChange}
                         className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                         type="password" name="password" id="password"
                     />

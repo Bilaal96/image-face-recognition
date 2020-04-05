@@ -91,7 +91,9 @@ class App extends Component {
 	}
 
 	onInputChange = (event) => {
-		this.setState({ input: event.target.value });
+		this.setState({
+			input: event.target.value
+		});
 	}
 
 	onImageSubmit = () => {
@@ -198,6 +200,7 @@ class App extends Component {
 				{route === 'home'
 					? this.renderHome()
 					: <AccessForm
+						onInputChange={this.onInputChange}
 						route={route}
 						onRouteChange={this.onRouteChange}
 						loadUser={this.loadUser}

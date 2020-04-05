@@ -14,9 +14,9 @@ class Access extends Component {
         };
     }
 
-    onInputChange = (event) => {
+    onFormInputChange = (event) => {
         const { name, value } = event.target
-        console.log(name, value);
+
         this.setState({
             [name]: value
         });
@@ -80,7 +80,7 @@ class Access extends Component {
                                     name={name}
                                     email={email}
                                     password={password}
-                                    onInputChange={this.onInputChange}
+                                    onFormInputChange={this.onFormInputChange}
                                     onFormSubmit={this.onFormSubmit}
                                 />
                                 : (route === 'signin')
@@ -89,7 +89,7 @@ class Access extends Component {
                                         loadUser={loadUser}
                                         email={email}
                                         password={password}
-                                        onInputChange={this.onInputChange}
+                                        onFormInputChange={this.onFormInputChange}
                                         onFormSubmit={this.onFormSubmit}
                                     />
                                     : ''
@@ -100,6 +100,5 @@ class Access extends Component {
         );
     }
 }
-
 
 export default Access;

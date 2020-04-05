@@ -1,6 +1,6 @@
 import React from 'react';
 
-function RegisterForm({ onInputChange, onFormSubmit, onRouteChange }) {
+function RegisterForm({ onFormInputChange, onFormSubmit, onRouteChange }) {
     return (
         <div className="RegisterForm">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
@@ -8,7 +8,7 @@ function RegisterForm({ onInputChange, onFormSubmit, onRouteChange }) {
                 <div className="mt3">
                     <label className="db fw6 lh-copy f6" htmlFor="name">Name</label>
                     <input
-                        onChange={onInputChange}
+                        onChange={onFormInputChange}
                         className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                         type="text" name="name" id="name"
                     />
@@ -16,7 +16,7 @@ function RegisterForm({ onInputChange, onFormSubmit, onRouteChange }) {
                 <div className="mt3">
                     <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                     <input
-                        onChange={onInputChange}
+                        onChange={onFormInputChange}
                         className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                         type="email" name="email" id="email-address"
                     />
@@ -24,7 +24,7 @@ function RegisterForm({ onInputChange, onFormSubmit, onRouteChange }) {
                 <div className="mv3">
                     <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                     <input
-                        onChange={onInputChange}
+                        onChange={onFormInputChange}
                         className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                         type="password" name="password" id="password"
                     />
